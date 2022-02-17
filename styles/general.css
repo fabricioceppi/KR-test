@@ -1,0 +1,150 @@
+/* Main setup */
+
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Titillium+Web:wght@700;900&display=swap");
+
+.han {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.titillium {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.black {
+    font-weight: 900;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.small {
+    font-size: 1rem;
+}
+
+.medium {
+    font-size: 1.25rem;
+}
+
+html {
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #373A3C;
+}
+
+/* Nav bar */
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+#nav-bar {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#ironhide {
+    width: 115px;
+}
+
+.menu {
+    position: fixed;
+    top: 83px;
+    right: -100%;
+    width: 100%;
+    background-color: rgb(0,0,0,0);
+    transition: right 300ms ease-in 300ms, background-color 300ms ease-out;
+}
+
+.menu > div {
+    background-color: white;
+    width: 18rem;
+    margin-left: auto;
+    padding: 1.5rem;
+    height: 100vh;
+}
+
+#menu-button {
+    transition: opacity 300ms;
+}
+
+#close-menu {
+    float: right;
+}
+
+.menu ul:first-of-type {
+    padding-top: 5rem;
+}
+
+.menu ul:first-of-type li {
+    margin-bottom: 2rem;
+}
+
+.menu ul:last-of-type {
+    padding-top: 1rem;
+}
+
+.menu ul:last-of-type li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+/* active states */
+
+nav.active {
+    position: fixed;
+}
+
+nav.active .menu {
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    transition: right 400ms cubic-bezier(.07,1.05,.83,1.01), background-color 300ms ease-in 400ms;
+}
+
+nav.active #menu-button {
+    opacity: 0;
+}
+
+/* Color buttons */
+
+.candy-button {
+    padding: 1.25em 3.5em 1em 3.5em;
+    border-radius: 0.7em;
+    background-image: linear-gradient(#E8551C 50%, 50%, #d14209);
+    color: white;
+    border: 0.25em solid #741D07;
+    box-shadow: 0 3px 6px rgb(150, 150, 150);
+}
+
+.candy-button > span {
+    margin-right: 0.5em;
+}
