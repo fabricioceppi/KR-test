@@ -2,46 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Titillium+Web:wght@700;900&display=swap");
 
-.han {
-    font-family: 'Black Han Sans', sans-serif;
-}
-
-.titillium {
-    font-family: 'Titillium Web', sans-serif;
-}
-
-.bold {
-    font-weight: 700;
-}
-
-.black {
-    font-weight: 900;
-}
-
-.upper {
-    text-transform: uppercase;
-}
-
-.small {
-    font-size: 1rem;
-}
-
-.medium {
-    font-size: 1.25rem;
-}
-
-.big {
-    font-size: 2.2rem;
-}
-
 html {
   font-size: 100%;
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-    overflow: scroll;
 }
 
 * {
@@ -51,22 +13,69 @@ html, body {
 }
 
 button {
-    border: none;
-    background-color: transparent;
+  border: none;
+  background-color: transparent;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-    color: #373A3C;
+  text-decoration: none;
+  color: #373a3c;
+}
+
+.han {
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.titillium {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.black {
+  font-weight: 900;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.small {
+  font-size: 1rem;
+}
+
+.medium {
+  font-size: 1.25rem;
+}
+
+.big {
+  font-size: 2.2rem;
 }
 
 /* Nav bar */
 
 nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+}
+
+#ironhide {
+    width: 115px;
+}
+
+/* nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -127,11 +136,11 @@ nav {
 .menu ul:last-of-type li {
     display: inline-block;
     margin-right: 1rem;
-}
+} */
 
 /* active states */
 
-nav.active {
+/* nav.active {
     position: fixed;
 }
 
@@ -143,11 +152,11 @@ nav.active .menu {
 
 nav.active #menu-button {
     opacity: 0;
-}
+} */
 
 /* Color buttons */
 
-.candy-button {
+/* .candy-button {
     padding: 1.25em 3.5em 1em 3.5em;
     border-radius: 0.7em;
     background-image: linear-gradient(#E8551C 50%, 50%, #d14209);
@@ -162,4 +171,4 @@ nav.active #menu-button {
 
 a.candy-button {
     display: block;
-}
+} */
