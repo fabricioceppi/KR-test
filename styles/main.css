@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    height: 184px;
+    /* height: 184px; */
     position: relative;
     transition: height 400ms cubic-bezier(.39,-0.19,.57,.96);
 }
