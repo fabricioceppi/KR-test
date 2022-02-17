@@ -1,0 +1,6 @@
+
+
+#Problemas de accesibilidad para resolver:
+
+- Agregar un H1 visualmente oculto a todas las páginas que no tienen uno evidente
+- Mejorar el uso de imagenes segun el dispositivo para disminuir el flujo de datos

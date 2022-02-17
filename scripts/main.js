@@ -17,3 +17,15 @@ window.addEventListener('resize', () => {
 
   openButton.addEventListener('click', () => nav.classList.add('active'));
   closeButton.addEventListener('click', () => nav.classList.remove('active'));
+
+  /* Game option display */
+
+  const gameVersions = document.querySelectorAll('.game-version');
+  gameVersions.forEach((game) => game.addEventListener('click', () => selectGame(game)));
+
+  function selectGame(game) {
+    gameVersions.forEach((option) => option.classList.remove('selected'));
+    game.focus();
+    game.classList.add('selected');
+    /* setTimeout(() => game.scrollIntoView({block: "center", behavior: "smooth"}), 400); */
+  }

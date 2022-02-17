@@ -30,6 +30,10 @@
     font-size: 1.25rem;
 }
 
+.big {
+    font-size: 2.2rem;
+}
+
 html {
   font-size: 100%;
 }
@@ -91,6 +95,7 @@ nav {
     margin-left: auto;
     padding: 1.5rem;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 #menu-button {
@@ -141,10 +146,14 @@ nav.active #menu-button {
     border-radius: 0.7em;
     background-image: linear-gradient(#E8551C 50%, 50%, #d14209);
     color: white;
-    border: 0.25em solid #741D07;
-    box-shadow: 0 3px 6px rgb(150, 150, 150);
+    border: 3px solid #741D07;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
 }
 
 .candy-button > span {
     margin-right: 0.5em;
+}
+
+a.candy-button {
+    display: block;
 }

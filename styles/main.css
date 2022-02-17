@@ -8,10 +8,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-content: center;
     height: 184px;
     position: relative;
+    transition: height 400ms cubic-bezier(.39,-0.19,.57,.96);
 }
 
 .shadow-layer {
@@ -39,12 +38,50 @@
 }
 
 .game-title {
-    display: flex;
+    width: 100%;
     z-index: 2;
 }
 
-.game-title > img {
-    margin: auto;
+.logo-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.logo-container > img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-buttons {
+    max-width: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: opacity 400ms ease-out 400ms;
+}
+
+.title-buttons h3 {
+    margin-top: 4rem;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+    margin-bottom: 0.5rem;
+}
+
+.title-buttons li {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+}
+
+.game-title .candy-button {
+    padding: 0.6em 2rem 0.4em 2rem;
+    text-align: center;
+    width: 100%;
 }
 
 #kr-option {
@@ -59,7 +96,7 @@
     background-image: url(../assets/krf-back.png);
 }
 
-#krf-option > img {
+#krf-logo {
     width: 168px;
 }
 
@@ -67,7 +104,7 @@
     background-image: url(../assets/kro-back.png);
 }
 
-#kro-option > img {
+#kro-logo {
     width: 144px;
 }
 
@@ -75,6 +112,73 @@
     background-image: url(../assets/krv-back.png);
 }
 
-#krv-option > img {
+#krv-logo {
     width: 154px;
+}
+
+/* Options states when game selected */
+
+
+.game-version.selected {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    display: flex;
+    align-items: center;
+}
+
+.selected .logo-container {
+    height: auto;
+    margin-bottom: 3rem;
+}
+
+.selected .logo-container > img {
+    position: static;
+    transform: translate(0, 0);
+    margin: 0 auto;
+}
+
+.selected .title-buttons {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.selected .shadow-layer {
+    background-color: transparent;
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.35));
+}
+
+/* individual logos resizing */
+
+.selected #kr-logo {
+    width: 184px;
+}
+
+.selected #krf-logo {
+    width: 216px;
+}
+
+.selected #kro-logo {
+    width: 184px;
+}
+
+.selected #krv-logo {
+    width: 192px;
+}
+
+/* individual backgrounds reset */
+
+#kr-option.selected {
+    background-image: url(../assets/KRSteam_-2.png);
+}
+
+#krf-option.selected {
+    background-image: url(../assets/Mobile_Header.png);
+}
+
+#kro-option.selected {
+    background-image: url(../assets/kro_home.png);
+}
+
+#krv-option.selected {
+    background-image: url(../assets/verticalgamecover.png);
 }
