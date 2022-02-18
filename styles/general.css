@@ -156,7 +156,7 @@ nav.active #menu-button {
 
 /* Color buttons */
 
-/* .candy-button {
+.candy-button {
     padding: 1.25em 3.5em 1em 3.5em;
     border-radius: 0.7em;
     background-image: linear-gradient(#E8551C 50%, 50%, #d14209);
@@ -170,5 +170,6 @@ nav.active #menu-button {
 }
 
 a.candy-button {
-    display: block;
-} */
+    display: inline-block;
+    text-align: center;
+}
