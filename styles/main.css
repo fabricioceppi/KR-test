@@ -30,6 +30,7 @@ main {
     text-align: center;
     height: 184px;
     overflow-y: hidden;
+    transition: height 400ms;
 }
 
 .title-logo {
@@ -81,7 +82,8 @@ main {
 
 .selected .title {
     margin-top: 6rem;
-    height: auto;
+    height: 600px;
+    height: calc(100vh - 163px);
 }
 
 .selected .title-logo {
