@@ -69,7 +69,7 @@ main {
 .call-to-action .candy-button {
     width: 12rem;
     padding: 0.6em 2rem 0.4em 2rem;
-    transition: opacity 600ms ease-in-out 500ms;
+    transition: opacity 600ms ease-in-out 600ms;
 }
 
 .call-to-action h3 {
@@ -77,11 +77,11 @@ main {
     text-shadow: 0 3px 6px rgba(0,0,0,0.4);
     margin-bottom: 0.5rem;
     color: white;
-    transition: opacity 600ms ease-in-out 600ms;
+    transition: opacity 600ms ease-in-out 700ms;
 }
 
 .call-to-action ul {
-    transition: opacity 600ms ease-in-out 700ms;
+    transition: opacity 600ms ease-in-out 800ms;
 }
 
 .call-to-action li {
