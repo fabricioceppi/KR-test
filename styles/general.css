@@ -166,7 +166,7 @@ a.candy-button {
 @media only screen and (min-width: 880px) {
 
   .small {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
   }
 
   nav {
@@ -213,6 +213,14 @@ nav.active .menu > div {
   padding-top: 0;
   padding-top: 5.5px;
   margin-right: 0;
+}
+
+.menu ul:last-of-type li {
+  margin-right: 0.5rem;
+}
+
+.menu ul:last-of-type img {
+  transform: scale(0.85);
 }
 
 .menu li {
