@@ -46,7 +46,7 @@ main {
     text-align: center;
     height: 184px;
     overflow-y: hidden;
-    transition: height 400ms;
+    transition: height 400ms cubic-bezier(.39,-0.19,.57,.96);
 }
 
 .title-logo {
@@ -70,9 +70,14 @@ main {
     transform: scaleY(0);
 }
 
+.call-to-action > * {
+    opacity: 0;
+}
+
 .call-to-action .candy-button {
     width: 12rem;
     padding: 0.6em 2rem 0.4em 2rem;
+    transition: opacity 600ms ease-in-out 400ms;
 }
 
 .call-to-action h3 {
@@ -80,6 +85,11 @@ main {
     text-shadow: 0 3px 6px rgba(0,0,0,0.4);
     margin-bottom: 0.5rem;
     color: white;
+    transition: opacity 600ms ease-in-out 500ms;
+}
+
+.call-to-action ul {
+    transition: opacity 600ms ease-in-out 600ms;
 }
 
 .call-to-action li {
@@ -117,4 +127,8 @@ main {
 
 .selected .call-to-action {
     transform: scaleY(1);
+}
+
+.selected .call-to-action > * {
+    opacity: 1;
 }

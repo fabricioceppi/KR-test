@@ -27,5 +27,5 @@ document.documentElement.style.setProperty('--vh', `${vh}px`); */
     gameVersions.forEach((option) => option.classList.remove('selected'));
     game.focus();
     game.classList.add('selected');
-    /* setTimeout(() => game.scrollIntoView({block: "center", behavior: "smooth"}), 400); */
+    setTimeout(() => game.scrollIntoView({block: "center", behavior: "smooth"}), 400);
   }
