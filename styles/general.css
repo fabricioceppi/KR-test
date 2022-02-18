@@ -230,3 +230,31 @@ nav.active .menu > div {
   }
 
 }
+
+/* hover states */
+
+nav a {
+  transition: opacity 300ms ease-out;
+}
+
+.candy-button,
+.market-button {
+  transition: transform 200ms ease-out;
+}
+
+@media (hover:hover) {
+
+  nav a:hover {
+    opacity: 0.5;
+  }
+
+  .candy-button:hover,
+  .market-button:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  .candy-button:hover {
+    background-image: linear-gradient(#f76f39 50%, 50%, #e95014);
+  }
+
+}

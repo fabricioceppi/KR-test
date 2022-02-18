@@ -45,6 +45,7 @@
     height: 184px;
     overflow-y: hidden;
     transition: height 400ms cubic-bezier(.39,-0.19,.57,.96);
+    width: 13rem;
 }
 
 .title-logo {
@@ -72,7 +73,7 @@
 .call-to-action .candy-button {
     width: 12rem;
     padding: 0.6em 2rem 0.4em 2rem;
-    transition: opacity 600ms ease-in-out 600ms;
+    transition: opacity 600ms ease-in-out 600ms, transform 200ms ease-out;
 }
 
 .call-to-action h3 {
@@ -241,6 +242,11 @@
         height: 9rem;
         width: 100%;
     }
+
+    .selected .title-logo > img {
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
     
     .call-to-action,
     .selected .call-to-action {
@@ -285,16 +291,20 @@
         background-image: url(../assets/verticalgamecover.png);
     }
 
-    #kr-logo {
+    #kr-logo,
+    .selected #kr-logo {
         width: 160px;
     }
 
-    #krf-logo {
+    #krf-logo,
+    .selected #krf-logo {
         width: 168px;
     }
 
     #kro-logo,
-    #krv-logo {
+    .selected #kro-logo,
+    #krv-logo,
+    .selected #krv-logo {
         width: 140px;
     }
 
@@ -306,17 +316,37 @@
         width: 100%;
     }
 
-    #kr-logo {
+    .title-logo,
+    .selected .title-logo {
+        height: 13rem;
+        width: 100%;
+    }
+
+    #kr-logo,
+    .selected #kr-logo {
         width: 240px;
     }
 
-    #krf-logo {
+    #krf-logo,
+    .selected #krf-logo {
         width: 248px;
     }
 
     #kro-logo,
-    #krv-logo {
+    .selected #kro-logo,
+    #krv-logo,
+    .selected #krv-logo {
         width: 224px;
     }
     
+}
+
+/* Hover states */
+
+@media (hover:hover) {
+
+    .game-version:hover .shadow-layer {
+        background-image: none;
+    }
+
 }
