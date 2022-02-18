@@ -95,15 +95,6 @@ nav {
   height: calc(var(--vh, 1vh) * 100);
 }
 
-.menu > div {
-    background-color: white;
-    width: 18rem;
-    margin-left: auto;
-    padding: 1.5rem;
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-}
-
 #menu-button {
     transition: opacity 300ms;
 }
@@ -145,6 +136,12 @@ nav.active #menu-button {
     opacity: 0;
 }
 
+/* main */
+
+main {
+  margin-top: 83px;
+}
+
 /* Color buttons */
 
 .candy-button {
@@ -168,8 +165,68 @@ a.candy-button {
 
 @media only screen and (min-width: 880px) {
 
+  .small {
+    font-size: 1.35rem;
+  }
+
   nav {
     position: static;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  main {
+    margin-top: 0;
+}
+
+.menu {
+  position: initial;
+}
+
+#menu-button {
+  display: none;
+}
+
+#close-menu {
+  display: none;
+}
+
+.menu > div,
+nav.active .menu > div {
+  width: auto;
+  padding: 0;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul:first-of-type {
+  padding-top: 0;
+}
+
+.menu ul:first-of-type li {
+  margin-bottom: 0;
+  margin-right: 1rem;
+}
+
+.menu ul:last-of-type {
+  padding-top: 0;
+  padding-top: 5.5px;
+  margin-right: 0;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  nav {
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 
 }
