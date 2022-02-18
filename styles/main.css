@@ -4,18 +4,12 @@ main {
     margin-top: 83px;
 }
 
-#kr-logo {
-    width: 160px;
-}
-
 .game-version {
-    background-image: url(../assets/KRSteam_-2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    justify-content: center;
-    padding: 2.5rem;
-    position: relative;
     display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .shadow-layer {
@@ -30,10 +24,19 @@ main {
 .title {
     z-index: 2;
     text-align: center;
+    margin-top: 6rem;
+    height: 184px;
+    overflow-y: hidden;
+    background-color: aqua;
+}
+
+#kr-logo {
+    width: 160px;
 }
 
 .call-to-action {
     margin-top: 3.5rem;
+    transform: scaleY(0);
 }
 
 .call-to-action .candy-button {
@@ -50,4 +53,22 @@ main {
 
 .call-to-action li {
     margin-bottom: 0.3rem;
+}
+
+/* selected states */
+
+.game-version.selected {
+    padding: 2.5rem;
+}
+
+#kr-option.selected {
+    background-image: url(../assets/KRSteam_-2.png);
+}
+
+.selected .title {
+    margin-top: 6rem;
+}
+
+.selected .call-to-action {
+    transform: scaleY(1);
 }
