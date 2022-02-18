@@ -24,10 +24,21 @@ main {
 .title {
     z-index: 2;
     text-align: center;
-    margin-top: 6rem;
     height: 184px;
     overflow-y: hidden;
+}
+
+.title-logo {
     background-color: aqua;
+    height: 100%;
+    position: relative;
+}
+
+.title-logo > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #kr-logo {
