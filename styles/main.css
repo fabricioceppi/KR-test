@@ -12,6 +12,10 @@ main {
     position: relative;
 }
 
+#kr-option {
+    background-image: url(../assets/kr-back.png);
+}
+
 .shadow-layer {
     position: absolute;
     background-color: rgba(0,0,0,0.4);
@@ -29,7 +33,6 @@ main {
 }
 
 .title-logo {
-    background-color: aqua;
     height: 100%;
     position: relative;
 }
@@ -78,6 +81,20 @@ main {
 
 .selected .title {
     margin-top: 6rem;
+    height: auto;
+}
+
+.selected .title-logo {
+    height: initial;
+}
+
+.selected .title-logo > img {
+    position: initial;
+    transform: translate(0, 0);
+}
+
+.selected #kr-logo {
+    width: 184px;
 }
 
 .selected .call-to-action {
