@@ -134,7 +134,8 @@
 
 .selected .title {
     margin-top: 6rem;
-    height: 600px;
+    height: 680px;
+    overflow-y: visible;
     /* height: calc(100vh - 163px); */
 }
 
@@ -216,8 +217,25 @@
         width: 224px;
     }
 
-    #krf-option {
+    #kr-option,
+    #kr-option.selected {
+        background-image: url(../assets/KR_branded-key-art.jpg);
+    }
+
+    #krf-option,
+    #krf-option.selected {
         background-image: url(../assets/medfro.png);
+    }
+
+    #kro-option,
+    #kro-option.selected {
+        background-image: url(../assets/KRO_backmed.jpg);
+    }
+
+    #krf-option.selected,
+    #kro-option.selected,
+    #krv-option.selected {
+        background-position: center;
     }
 
 }
@@ -231,8 +249,6 @@
         width: 25%;
         min-height: 100vh;
         float: left;
-        display: flex;
-        align-items: center;
     }
     
     .title,
@@ -245,7 +261,7 @@
     .selected .title-logo {
         height: 9rem;
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
 
     .selected .title-logo > img {
@@ -280,19 +296,23 @@
         right: -34px;
     }
 
-    #kr-option {
+    #kr-option,
+    #kr-option.selected {
         background-image: url(../assets/KRSteam_-2.png);
     }
     
-    #krf-option {
+    #krf-option,
+    #krf-option.selected {
         background-image: url(../assets/Mobile_Header.png);
     }
     
-    #kro-option {
+    #kro-option,
+    #kro-option.selected {
         background-image: url(../assets/kro_home.png);
     }
     
-    #krv-option {
+    #krv-option,
+    #krv-option.selected {
         background-image: url(../assets/verticalgamecover.png);
     }
 
@@ -313,6 +333,12 @@
         width: 140px;
     }
 
+    #krf-option.selected,
+    #kro-option.selected,
+    #krv-option.selected {
+        background-position: initial;
+    }
+
 }
 
 @media only screen and (min-width: 1080px) {
@@ -325,6 +351,7 @@
     .selected .title-logo {
         height: 13rem;
         width: 100%;
+        margin-top: 5rem;
     }
 
     #kr-logo,
