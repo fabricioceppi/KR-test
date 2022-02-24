@@ -243,12 +243,16 @@
 @media only screen and (min-width: 880px) {
 
 
+    .main-displayer {
+        display: flex;
+    }
+
     .game-version,
     .game-version.selected {
         padding: 0;
         width: 25%;
-        min-height: 100vh;
-        float: left;
+        min-height: 740px;
+        height: 100vh;
     }
     
     .title,
@@ -343,6 +347,11 @@
 
 @media only screen and (min-width: 1080px) {
 
+    .game-version,
+    .game-version.selected {
+        min-height: 800px;
+    }
+
     .title {
         width: 100%;
     }
@@ -351,7 +360,6 @@
     .selected .title-logo {
         height: 13rem;
         width: 100%;
-        margin-top: 5rem;
     }
 
     #kr-logo,
